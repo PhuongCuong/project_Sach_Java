@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportthongkedoanhthu" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83507268-9222-42d7-ba62-743f6c074ff6">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ngaynay" class="java.sql.Date"/>
+	<field name="ngaykia" class="java.sql.Date"/>
+	<field name="calv" class="java.lang.String"/>
+	<field name="tongsohd" class="java.lang.Integer"/>
+	<field name="tongsotien" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="117" y="10" width="321" height="51" uuid="0d2953fa-08fd-4981-be3d-6a132c3d7724"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ DOANH THU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="196" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="3" width="120" height="28" uuid="50cb46fa-add2-44d5-ae4a-999a6c93501c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Từ Ngày]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="3" width="170" height="30" uuid="4d3a8c59-ce56-4c77-84a4-21ef2e751578"/>
+				<textFieldExpression><![CDATA[$F{ngaynay}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="41" width="120" height="28" uuid="687f72fe-0a6b-48de-a5d0-2f4492959097"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Đến Ngày]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="39" width="170" height="30" uuid="a0b0a8f9-f7c8-45aa-a114-7ffe2793fcb4"/>
+				<textFieldExpression><![CDATA[$F{ngaykia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="75" width="120" height="28" uuid="8521493c-7d4b-4dda-ba5f-e67f2ad9934e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ca Làm Việc]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="75" width="170" height="30" uuid="cf8caf72-1b65-472b-92c5-b1efa6295ac4"/>
+				<textFieldExpression><![CDATA[$F{calv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="115" width="120" height="28" uuid="40c9d71c-9e74-495f-b11d-5846fa89dd55"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tổng Số Lần Bán Hàng]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="114" width="170" height="30" uuid="37ffead0-d675-4e28-9d9c-f2d504872555"/>
+				<textFieldExpression><![CDATA[$F{tongsohd}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="157" width="120" height="28" uuid="23885ea2-7142-47f8-bad6-991b7da594b1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tống Số Tiền Thu Được]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="156" width="170" height="30" uuid="6717a24c-c5b9-4167-b08b-2ec65f2df417"/>
+				<textFieldExpression><![CDATA[$F{tongsotien}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

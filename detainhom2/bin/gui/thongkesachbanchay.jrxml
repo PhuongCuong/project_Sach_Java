@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="thongkesachbanchay" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0b7dafc9-59e9-4d82-bac1-f0399fd38c5f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="Empty Dataset1" uuid="d60dee94-d320-49cd-bf6f-e2c0d69af36c">
+		<field name="STT" class="java.lang.Integer"/>
+		<field name="masp" class="java.lang.String"/>
+		<field name="theloai" class="java.lang.String"/>
+		<field name="tensp" class="java.lang.String"/>
+		<field name="nhaxb" class="java.lang.String"/>
+		<field name="nhacc" class="java.lang.String"/>
+		<field name="donvitinh" class="java.lang.String"/>
+		<field name="dg" class="java.lang.String"/>
+		<field name="sl" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="title1" class="java.lang.String"/>
+	<parameter name="collectionthongke" class="gui.GuiThongKeSachBanChay"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="STT" class="java.lang.Long"/>
+	<field name="MASP" class="java.lang.String"/>
+	<field name="TENTL" class="java.lang.String"/>
+	<field name="TENSP" class="java.lang.String"/>
+	<field name="NXB" class="java.lang.String"/>
+	<field name="NCC" class="java.lang.String"/>
+	<field name="DVT" class="java.lang.String"/>
+	<field name="DG" class="java.lang.Float"/>
+	<field name="SL" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="239" y="22" width="100" height="30" uuid="88c46d68-c80b-4b86-946e-408256eba34f"/>
+				<textFieldExpression><![CDATA[$P{collectionthongke}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="60" height="20" uuid="dcf5a666-2aa6-4193-a7c0-abf017b4483f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="0" width="60" height="20" uuid="272300d7-1ca0-41e8-8cf9-468e93b0f3d1"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MÃ SP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="80" height="20" uuid="6da03dee-970a-4cd1-83f9-9dbfdc0e40f5"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THỂ LOẠI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="60" height="20" uuid="fa373e07-76e2-4ccf-a987-14241939b4ad"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÊN SP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="60" height="20" uuid="0754161e-22ad-4c31-8a99-b11f1f85bf79"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NHÀ XB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="60" height="20" uuid="6959381f-333f-4fbb-a03c-377012f67963"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NHÀ CC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="100" height="20" uuid="92cd9a3a-e8fb-4cf2-98e9-20bd9109fb0d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐƠN VỊ TÍNH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="70" height="20" uuid="141bd0a8-99fb-4fdc-9062-5792d0ba2e18"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐƠN GIÁ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="530" y="0" width="60" height="20" uuid="b7b7b5db-6a81-4b89-a013-e41eff5d7799"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SỐ LƯỢNG]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="21" width="611" height="1" uuid="b296211d-15de-4fff-9ac5-0469f64f7cd8"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="2" width="61" height="28" uuid="0b0685ef-bf16-417f-bb44-831d79c4e038"/>
+				<textFieldExpression><![CDATA[$F{STT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="2" width="61" height="28" uuid="dfec53a7-ea09-4205-a365-9318bf747e2d"/>
+				<textFieldExpression><![CDATA[$F{MASP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="2" width="80" height="28" uuid="38b78e1f-d95d-4270-bd2a-2c4a74179407"/>
+				<textFieldExpression><![CDATA[$F{TENTL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="2" width="61" height="28" uuid="1872c7f1-c8aa-4b77-b993-fee08a5184f7"/>
+				<textFieldExpression><![CDATA[$F{TENSP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="2" width="61" height="28" uuid="55ee743b-f366-426c-8401-534c7e3cea5d"/>
+				<textFieldExpression><![CDATA[$F{NXB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="2" width="61" height="28" uuid="8ef2b192-6105-4d61-a1e8-cd61646bf28c"/>
+				<textFieldExpression><![CDATA[$F{NCC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="2" width="100" height="28" uuid="513268f4-a2e0-4f5e-b97c-189da677c246"/>
+				<textFieldExpression><![CDATA[$F{DVT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="2" width="70" height="28" uuid="842d172a-1626-4f23-9fdc-f7b9af0dd493"/>
+				<textFieldExpression><![CDATA[$F{DG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="2" width="61" height="28" uuid="bdb391fa-23ca-4abf-b40e-784c60b253eb"/>
+				<textFieldExpression><![CDATA[$F{SL}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-19" y="30" width="611" height="1" uuid="f26c47ac-0aa4-4578-90d1-0411e9a77776"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<printWhenExpression><![CDATA[$P{collectionthongke}]]></printWhenExpression>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

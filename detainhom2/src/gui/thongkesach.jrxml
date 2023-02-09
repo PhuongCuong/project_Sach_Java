@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="thongkesach" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="56e78972-b814-4ae3-bac6-7c14d1de0063">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="thongke" class="java.lang.String"/>
+	<parameter name="masp" class="java.lang.String"/>
+	<parameter name="theloai" class="java.lang.String"/>
+	<parameter name="tensp" class="java.lang.String"/>
+	<parameter name="nhaxb" class="java.lang.String"/>
+	<parameter name="nhacc" class="java.lang.String"/>
+	<parameter name="donvt" class="java.lang.String"/>
+	<parameter name="dongia" class="java.lang.Double"/>
+	<parameter name="soluong" class="java.lang.Integer"/>
+	<parameter name="tongsoluong" class="java.lang.Integer"/>
+	<parameter name="Parameter10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.Double"/>
+	<field name="COLUMN_7" class="java.lang.Integer"/>
+	<field name="sosach" class="java.lang.String"/>
+	<field name="thongke" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="10" width="390" height="61" uuid="a7f9da51-2868-443f-b564-fe08e06da3ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria" size="26"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thongke}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="-20" y="30" width="595" height="1" uuid="fe2e6f11-263c-4a75-9842-d2dcb88eb942"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="11" width="70" height="20" uuid="4264c8f4-91a0-45b7-bb77-faebe3fafa7d"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[mã SP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="11" width="70" height="20" uuid="98822a66-9b23-4e4f-a15d-2a508ac5b91e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[tên SP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="11" width="70" height="20" uuid="0920be44-377e-451d-8cfd-0b79279288da">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[nhà CC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="11" width="70" height="20" uuid="3dce67d1-12db-4cdd-b1db-60fe374dc79f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[nhà XB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="11" width="70" height="20" uuid="9ed6a3b3-bbe0-4fc9-9251-e0cd81ae7a2f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[đơn giá]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="11" width="70" height="20" uuid="9a1b5870-ff42-46c7-be18-98326a723352">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[thể loại]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="11" width="70" height="20" uuid="a2be6191-91da-4101-b52a-174b55a0a02a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[đơn VT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="11" width="70" height="20" uuid="755b7187-5a6c-44cb-89c5-0c097918c27b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[số Lượng]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-1" width="70" height="30" uuid="ba159d58-07f1-4866-9298-2dcf07982a49"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="-1" width="70" height="30" uuid="fdcdc676-d5b2-4c27-8f19-6eb9c8130b4a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="-1" width="70" height="30" uuid="bd858a29-9ad0-475b-b0be-4d080ed27a9e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="-1" width="70" height="30" uuid="a51ea543-023a-4e6f-a19e-c74ec3c76d32"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="-1" width="70" height="30" uuid="5a8fa488-2803-4610-b99c-56f02ffb5a52"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="-1" width="70" height="30" uuid="e2b92559-ddb2-4563-8218-5ef541398634"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="-1" width="70" height="30" uuid="8a74adca-507d-424c-8832-f24f68c71690"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="-1" width="70" height="30" uuid="2c43c386-b54a-434b-af27-537bbdd243bc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="-2" width="595" height="1" uuid="fcecfac0-6a9a-4e87-aab1-90b72c17cf57"/>
+			</line>
+			<line>
+				<reportElement x="-10" y="30" width="595" height="1" uuid="86d4dbbf-4653-4358-9449-1debe0168a29"/>
+			</line>
+		</band>
+		<band height="50"/>
+	</detail>
+	<columnFooter>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="0" width="110" height="30" uuid="b66a2019-cd4f-43f9-821d-727124ff99b7"/>
+				<textFieldExpression><![CDATA[$F{sosach}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="5" width="220" height="20" uuid="aeb73a39-044c-4eeb-b7c3-1f5c07fbf8a3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TỔNG SỐ LƯỢNG SÁCH BÁN ĐƯỢC:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
